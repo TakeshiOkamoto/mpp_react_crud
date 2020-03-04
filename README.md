@@ -3,8 +3,8 @@
 DEMO    
 [https://www.petitmonte.com/rails-demo/react_crud](https://www.petitmonte.com/rails-demo/react_crud)  
   
-詳細な解説  
-只今、作成中です。   
+解説  
+[https://www.petitmonte.com/ruby/react_crud.html](https://www.petitmonte.com/ruby/react_crud.html)  
   
 [mpp_react_crudの意味]  
 mpp = My Practice Project  
