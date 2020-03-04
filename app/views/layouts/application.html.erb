@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title><%= "Rails + React + AjaxでCRUDのサンプルプロジェクト" %></title>
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1" />    
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag 'application', media: 'all' %>
+    <%= javascript_pack_tag 'application' %>
+            
+    <%# react_crud.jsxの読み込み %>
+    <%= javascript_pack_tag 'react_crud' %>   
+  </head>
+  <body>
+    <div class="app-title navbar navbar-expand-md navbar-light bg-primary">
+      <div class="navbar-brand text-white"><%= "Rails + React + AjaxでCRUDのサンプルプロジェクト" %></div>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><%= link_to '全て初期化',  new_react_crud_data_path, class: 'nav-link',style: "color:#fff;" %></li> 
+      </ul>       
+    </div>   
+    <div class="container">
+       <%= yield %>       
+    </div>    
+    <br>       
+    <nav class="container bg-primary p-2 text-center">
+      <div class="text-center text-white">
+         React "CRUD" Sample
+      </div>  
+      <div class="text-center text-white">       
+        Takeshi Okamoto wrote the code.
+      </div>  
+      <p></p>      
+    </nav>    
+  </body>
+</html>
