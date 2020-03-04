@@ -5,6 +5,11 @@ DEMO
   
 詳細な解説  
 只今、作成中です。   
+  
+[mpp_react_crudの意味]  
+mpp = My Practice Project  
+react = React  
+crud = Create Read Update Delete    
     
 ## 1. 環境
 ・Ruby 2.6.5  
