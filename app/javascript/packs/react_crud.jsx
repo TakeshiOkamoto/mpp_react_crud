@@ -154,7 +154,7 @@ class ReactCurdComponent extends React.Component {
   handleUpdate(index, id, event){
     
     // フォームデータ
-    // ※stateで状態管理を行うとキャンセルができないので<input defaultValue={} />とFormDataを使います。
+    // ※<input onChange={} />で状態管理を行うとキャンセルができないので<input defaultValue={} />とFormDataを使っています。
     const form_data = new FormData(event.target);
 
     this.setState((state) => {
