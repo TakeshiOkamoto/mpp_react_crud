@@ -14,12 +14,12 @@
     <%= javascript_pack_tag 'react_crud' %>   
   </head>
   <body>
-    <div class="navbar navbar-expand-md navbar-light bg-primary">
+    <nav class="navbar navbar-expand-md navbar-light bg-primary">
       <div class="navbar-brand text-white"><%= "Rails + React + AjaxでCRUDのサンプルプロジェクト" %></div>
       <ul class="navbar-nav ml-auto">
         <li class="nav-item"><%= link_to '全て初期化',  new_react_crud_data_path, class: 'nav-link',style: "color:#fff;" %></li> 
       </ul>       
-    </div>   
+    </nav>   
     <div class="container">
        <%= yield %>       
     </div>    
