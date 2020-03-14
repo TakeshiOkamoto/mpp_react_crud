@@ -62,9 +62,16 @@ config.require_master_key = true
 ### フォルダの生成
 ```rb  
 app/assetsにimagesフォルダを手動で生成する。 
-```
+``````
 ※コレを行わないと「Completed 500 Internal Server Error」になりますのでご注意。  
     
+### 実行する
+```rb  
+bin/rails s
+```  
+
+[http://localhost:3000/](http://localhost:3000/)  
+
 ## 3. Rails6プロジェクトの各種初期設定
 その他は次の記事を参照してください。  
   
