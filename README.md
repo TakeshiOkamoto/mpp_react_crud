@@ -8,7 +8,7 @@ DEMO
   
 [mpp_react_crudの意味]  
 mpp = My Practice Project  
-react = React  
+react = React    
 crud = Create Read Update Delete    
     
 ## 1. 環境
