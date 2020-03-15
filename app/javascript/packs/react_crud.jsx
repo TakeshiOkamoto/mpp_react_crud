@@ -71,7 +71,8 @@ class ReactCurdComponent extends React.Component {
                                      comment: result.comment,
                                      updated_at: result.updated_at}
                                    );    
-                return {status: state.status, items: state.items}
+                state.mode.unshift(false)                   
+                return {status: state.status, items: state.items, mode:state.mode}
               }
             // 更新/削除
             }else{
@@ -192,6 +193,7 @@ class ReactCurdComponent extends React.Component {
     this.setState((state) => {
      
       state.items.splice(index, 1);
+      state.mode.splice(index, 1);
       
       // Ajax
       this.run_ajax("DELETE",
@@ -199,7 +201,7 @@ class ReactCurdComponent extends React.Component {
                     {}
                    );
             
-      return {items: state.items}
+      return {items: state.items, mode:state.mode}
     });    
             
     event.preventDefault();
