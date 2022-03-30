@@ -41,4 +41,4 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # 追加分
-gem 'bootstrap', '4.3.1'
+gem 'bootstrap', '4.6.1'
